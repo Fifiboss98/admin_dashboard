@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin_Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>
+            FIFI's SHOP
+        </h1>
+    </div>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="menu_btn"></div>
+            </div>
+
+            <div class="sidebar">
+                <a href="">
+                    <h3>
+                        Acceuil
+                    </h3>
+                </a>
+                <a href="">
+                    <h4>
+                        Commandes
+                    </h4>
+                </a>
+                <a href="" class="active">
+                    <h4>
+                        Ventes
+                    </h4>
+                </a>
+                <a href="">
+                    <h4>
+                        Clients
+                    </h4>
+                </a>
+                <a href="">
+                    <h4>
+                        Stock
+                    </h4>
+                </a>
+                <a href="">
+                    <h4>
+                        Recettes
+                    </h4>
+                </a>
+                <a href="">
+                    <h3>
+                        Déconnexion
+                    </h3>
+                </a>
+            </div>
+        </aside>
+
+        <!--- MAIN SECTION --->
+
+        <main>
+            <h1>
+                Date
+            </h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="sales">
+                    <div class="middle">
+                        <div class="left">
+                            <h3>
+                                Total des ventes
+                            </h3>
+                            <h1>
+                                2,569,000 XOF
+                            </h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>
+                                    81%
+                                </p>
+                            </div>
+                            <small class="text-muted">
+                                Mise à jour récente
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="expenses">
+                    <div class="middle">
+                        <div class="left">
+                            <h3>
+                                Total des dépenses
+                            </h3>
+                            <h1>
+                                1,835,014 XOF
+                            </h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>
+                                    62%
+                                </p>
+                            </div>
+                            <small class="text-muted">
+                                Mise à jour récente
+                            </small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="incomes">
+                    <div class="middle">
+                        <div class="left">
+                            <h3>
+                                Bénéfices
+                            </h3>
+                            <h1>
+                                5,715,000 XOF
+                            </h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>
+                                    44%
+                                </p>
+                            </div>
+                            <small class="text-muted">
+                                Mise à jour récente
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-------- COMMANDES ---------->
+
+            <div class="recent-orders">
+                <h2>
+                    Commandes en cours
+                </h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th> Nom </th>
+                            <th> Identifiant </th>
+                            <th> Etat du paiement </th>
+                            <th> Livré </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Armoire </td>
+                            <td> 0325 </td>
+                            <td class="warning"> En cours </td>
+                            <td> Oui </td>
+                        </tr>
+                        <tr>
+                            <td> Chaise </td>
+                            <td> 0785 </td>
+                            <td class="success"> Soldé </td>
+                            <td> Non </td>
+                        </tr>
+                        <tr>
+                            <td> Plats </td>
+                            <td> 3577 </td>
+                            <td class="warning"> En cours </td>
+                            <td> Non </td>
+                        </tr>
+                        <tr>
+                            <td> Table </td>
+                            <td> 0325 </td>
+                            <td class="danger"> Annulé </td>
+                            <td> - </td>
+                        </tr>
+                        <tr>
+                            <td> Porte Isoplane </td>
+                            <td> 6653 </td>
+                            <td class="success"> Soldé </td>
+                            <td> Oui </td>
+                        </tr>
+                        <tr>
+                            <td> Fauteuil Jardin </td>
+                            <td> 9672 </td>
+                            <td class="success"> Soldé </td>
+                            <td> Non </td>
+                        </tr>
+                        <tr>
+                            <td> Lit 3 places </td>
+                            <td> 7892 </td>
+                            <td class="warning"> En cours </td>
+                            <td> Oui </td>
+                        </tr>
+                        <tr>
+                            <td> Bureau </td>
+                            <td> 8934 </td>
+                            <td class="warning"> En cours </td>
+                            <td> Non </td>
+                        </tr>
+                        <tr>
+                            <td> Meuble Cuisine </td>
+                            <td> 2453 </td>
+                            <td class="warning"> En cours </td>
+                            <td> Non </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+
+    </div>
+</body>
+
+</html>
